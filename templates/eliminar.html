@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Paciente</title>
+</head>
+<body>
+    <h1>Eliminar Paciente</h1>
+    <p>¿Estás seguro de que deseas eliminar a <strong>{{ paciente['Nombre'] }} {{ paciente['Apellido'] }}</strong>?</p>
+    
+    <form action="/eliminar/{{ paciente['ID'] }}" method="post">
+        <button type="submit">Sí, eliminar</button>
+    </form>
+    <a href="/">Volver al menú principal</a>
+</body>
+</html>
